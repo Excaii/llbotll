@@ -1,0 +1,15 @@
+language: python
+
+python:
+  - "3.4"
+  
+notifications:
+  email: false
+
+addons:
+  apt:
+    packages:
+      - python3-lxml
+      - python-dev
+
+script:  "nosetests --verbosity=3"
